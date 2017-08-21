@@ -24,10 +24,8 @@ public class GymChainInfo {
     public static final String JAMES_MEMBER_NAME = "James";
     public static final String MICHELA_MEMBER_NAME = "Michela";
 
-    //TODO 1: assign a different value to the constant below
-    public static final String YOUR_GYM_NAME = "Your Gym";
-    //TODO 1: assign a different value to the constant below
-    public static final String YOUR_MEMBER_NAME = "Your Name";
+    public static final String CEDAR_PARK_GYM_NAME = "Cedar Park";
+    public static final String TODD_MEMBER_NAME = "Todd";
 
     public static void main(String[] args) {
         GymChain chain = new GymChain();
@@ -50,7 +48,7 @@ public class GymChainInfo {
         chain.signUpMember(m2);
         chain.signUpMember(m3);
 
-        //TODO 3: construct a new Member object with the parameter YOUR_MEMBER_NAME
+        //TODO 3: construct a new Member object with the parameter TODD_MEMBER_NAME
 //        Member m4 = ...
         //TODO 3: uncomment these 2 lines:
 //        m4.setMembershipLevel(DELUXE);
@@ -79,7 +77,7 @@ public class GymChainInfo {
         chain.addGym(g3);
 
         //TODO 4: pick a variable name for the gym below and uncomment:
-//        Gym ... = new Gym(YOUR_GYM_NAME);
+//        Gym ... = new Gym(CEDAR_PARK_GYM_NAME);
         //TODO 4: add your new gym's variable name and uncomment:
 //        initializeGym0(...);
         //TODO 4: add your new gym's variable name and uncomment:

@@ -59,7 +59,7 @@ public class InfoManager {
         System.out.println("Enter '"+ PINE_VALLEY_COMMAND + "' for FitLife " + PINE_VALLEY_GYM_NAME);
         System.out.println("Enter '"+ PALM_LAKE_COMMAND + "' for FitLife " + PALM_LAKE_GYM_NAME);
         //TODO 5: uncomment the next method call:
-//        System.out.println("Enter '" + YOUR_GYM_COMMAND + "' for Fitlife " + YOUR_GYM_NAME);
+//        System.out.println("Enter '" + YOUR_GYM_COMMAND + "' for Fitlife " + CEDAR_PARK_GYM_NAME);
         System.out.println("To quit at any time, enter '"+ QUIT_COMMAND +"'.");
     }
 
@@ -204,7 +204,7 @@ public class InfoManager {
                     printGymInfo(chain.lookupGymByName(PALM_LAKE_GYM_NAME));
                     break;
                 case YOUR_GYM_COMMAND:
-                    printGymInfo(chain.lookupGymByName(YOUR_GYM_NAME));
+                    printGymInfo(chain.lookupGymByName(CEDAR_PARK_GYM_NAME));
                     break;
                 case MEMBERS_COMMAND:
                     printMemberInfo();
