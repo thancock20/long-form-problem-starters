@@ -95,9 +95,10 @@ public class InfoManager {
     private void printRegisteredMembers(FitnessClass fc){
         System.out.println("All members registered for " + fc.getClassName() + ": ");
         List<Member> memberList = fc.getMembersRegistered();
-
-        //TODO 7: write a foreach loop that prints out the name of each member in memberList
-
+        for (Member m : memberList) {
+            String memberName = m.getName();
+            System.out.println(memberName);
+        }
     }
 
     //EFFECTS: prints out the list of cardio machines at this gym
