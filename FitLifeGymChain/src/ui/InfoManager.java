@@ -73,21 +73,22 @@ public class InfoManager {
                 gym.getFitnessClasses().size());
         for (FitnessClass fc : gym.getFitnessClasses()) {
             System.out.println(fc.getClassName() + ", " + fc.getDayAndTime());
-        //TODO 6: uncomment the next line:
-//            handleRegisterMember(fc);
+            handleRegisterMember(fc);
         }
     }
 
     private void registerMemberForClass(Member m, FitnessClass fc){
         boolean eligible = m.canReserveClasses();
-
-        //TODO 6: if member is eligible:
-//        register Member m for the class, print out a confirmation message,
-//        and call printRegisteredMembers
-        //TODO 6: if the member is not eligible, print out the message below:
-
-        System.out.println("This member is not eligible to reserve classes. \n" +
-                "Their membership level is " + m.getLevel());
+        if (eligible) {
+            fc.registerMember(m);
+            System.out.println(m.getName() + " is registered."
+            );
+            printRegisteredMembers(fc);
+        }
+        else {
+            System.out.println("This member is not eligible to reserve classes. \n" +
+                    "Their membership level is " + m.getLevel());
+        }
 
     }
 
